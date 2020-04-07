@@ -11,8 +11,8 @@ namespace Cw5.Services
 {
     public interface IStudentsDbService
     {
-        EnrollStudentResponse EnrollStudent(EnrollStudentRequest req);
-        PromoteStudentResponse PromoteStudent(PromoteStudentRequest req);
+        EnrollStudentResponse EnrollStudent(EnrollStudentRequest request);
+        PromoteStudentResponse PromoteStudent(PromoteStudentRequest request);
         bool IsStudentExists(String StudentIndexNumber);
     }
 }

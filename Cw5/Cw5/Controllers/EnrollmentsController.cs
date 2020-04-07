@@ -30,7 +30,7 @@ namespace Cw5.Controllers
             _service.EnrollStudent(request);
             var response = new EnrollStudentResponse();    
             if (response == null)
-                return NotFound("Wrong data was passed");
+                return NotFound("blad 401");
             else
                 //return Ok(response);
                 return StatusCode(201, response);
@@ -44,7 +44,7 @@ namespace Cw5.Controllers
         {
             PromoteStudentResponse response = _service.PromoteStudent(request);
             if (response == null)
-                return StatusCode(400, BadRequest("Wrong data"));
+                return StatusCode(401, BadRequest("blad 401"));
             else
                 return StatusCode(201, response);
         }

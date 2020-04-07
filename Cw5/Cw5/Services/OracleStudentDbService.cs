@@ -6,7 +6,7 @@ using Cw5.DTOs.Requests;
 
 namespace Cw5.Services
 {
-    public class OracleStudentDbService : IStudentDbService
+    public class OracleStudentDbService : IStudentsDbService
     {
         public void EnrollStudent(EnrollStudentRequest request)
         {
