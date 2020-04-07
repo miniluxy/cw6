@@ -16,9 +16,9 @@ namespace Cw5.Controllers
     [ApiController] //-> implicit model validation
     public class EnrollmentsController : ControllerBase
     {
-        private IStudentDbService _service;
+        private IStudentsDbService _service;
 
-        public EnrollmentsController(IStudentDbService service)
+        public EnrollmentsController(IStudentsDbService service)
         {
             _service = service;
         }
